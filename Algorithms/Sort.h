@@ -11,7 +11,7 @@ private:
 public:
 	Sort(int s, int* arr);
 
-	void bubble_sort();
+	void bubble_sort(); 
 
 	void shaker_sort();
 

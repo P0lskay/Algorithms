@@ -1,19 +1,15 @@
-#include "Sort.h"
+#include "Algorithm.h"
 #include <iostream>
+#include <vector>
+using namespace std;
 
 int main() 
 {
+	vector<int> vec = { 1, 2, 3, 4, 5 };
 
-	int *arr = new int[5];
+	Algorithm al;
 
-	arr[0] = 3;
-	arr[1] = 2;
-	arr[2] = 1;
-	arr[3] = 5;
-	arr[4] = 4;
-	Sort sort(5, arr);
-	sort.shaker_sort();
-	sort.getArray();
+	cout << *(al.binary_search(2, vec.begin(), vec.end()));
 
 	return 0;
 }
